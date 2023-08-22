@@ -1,0 +1,82 @@
+body {
+    font-family: 'Helvetica', sans-serif;
+    background-color: #ffeced;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  .container {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    max-width: 80%;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #ff6b6b;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+  }
+  
+  button {
+    background-color: #ff6b6b;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #ff4f4f;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .heartButton {
+    margin-top: 1.5rem;
+  }
+  
+  .heart {
+    animation: heartbeat 1s infinite;
+  }
+  
+  @keyframes heartbeat {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+  }
+  
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 2rem;
+    }
+  
+    p {
+      font-size: 1.1rem;
+    }
+  
+    button {
+      font-size: 1.1rem;
+      padding: 10px 20px;
+    }
+  }
+  
